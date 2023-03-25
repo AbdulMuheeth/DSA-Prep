@@ -1,0 +1,431 @@
+.pricing-section {
+  min-height: 100vh;
+  width: 85%;
+  margin: 0 auto;
+ 
+
+  display: flex;
+  flex-direction: row; 
+}
+
+.price-wrapper {
+  /* min-width: 100%; */
+  position: relative;
+  background: #ffffffa8;
+}
+
+.pricing-section::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background: url("/public/images/Texture\ 2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* z-index: 1; */
+  opacity: 1;
+}
+.pricing-section > .left {
+  padding-top: 275px;
+}
+
+.pricing-section .header {
+  width: 744px;
+  height: 270px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 90px;
+  letter-spacing: -0.03em;
+  color: #000000;
+
+  margin-bottom: 40px;
+  
+  position: relative;
+  z-index: 1;
+}
+
+.pricing-section .header .highlighter {
+  /* color:grey; */
+  white-space: pre-line;
+  color: var(--blue-color);
+  z-index: 1;
+}
+
+.pricing-section .left .para {
+  width: 744px;
+  height: 160px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: -0.03em;
+  color: #000000;
+  z-index: 1;
+
+  margin-bottom: 133px;
+  
+  position: relative;
+  z-index: 1;
+}
+
+.pricing-section .subsections-p{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 40px;
+    position: relative;
+    z-index:1;
+}
+
+.subsections-p .item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.subsections-p .item .emty{
+    width: 80px;
+    height: 80px;
+    background: #D9D9D9;
+    border-radius: 8px;
+    margin-right: 24px;
+}
+
+.subsections-p .item .content{
+    width: 249px;
+    height: 75px;
+
+    font-family: 'DM Sans';
+    letter-spacing: -0.03em;
+}
+
+.subsections-p .item .content h4{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+}
+
+.subsections-p .item .content p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.pricing-section .price-right{
+    margin-top: 105px;
+    margin-left: 161px;
+    width: 615px;
+    height: 1143px;
+    filter: drop-shadow(0px 20px 75px rgba(5, 68, 94, 0.35));
+}
+
+.price-right .price-section{
+    position: relative;
+    width: 615px;
+    height: 279px;
+    border: 1px solid transparent;
+    background: linear-gradient(90.76deg, #FFFFFF 0%, #DFF6FF 144.63%) padding-box,linear-gradient(180deg, #05445E -19.12%, rgba(5, 68, 94, 0) 18.94%) border-box;
+    border-radius: 16px 16px 0px 0px;
+    padding:40px;
+}
+
+.price-section .banner-title{
+    width: 248px;
+    height: 32px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.03em;
+
+    color: var(--light-black);
+
+}
+
+.price-section .original-price{
+    width: 206px;
+    height: 72px;
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 72px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: -0.03em;
+    text-decoration-line: line-through;
+
+    color: var(--grey-color);
+}
+
+.price-section .offer-price{
+    font-family: 'Rubik';
+
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 72px;
+    
+
+    letter-spacing: -0.03em;
+
+    background: linear-gradient(90deg, #3F6FC1 0%, #05445E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.price-section{
+    overflow: hidden;
+}
+
+.price-right .price-section .backlogo{
+    position: absolute;
+    /* content:''; */
+    bottom: 0;
+    right: -170px;
+    width: 100%;
+    height: 150%;
+    background-image: url('/public/images/price\ backdrop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.05;
+}
+
+.price-right .included-content{
+    position: relative;
+    /* z-index: 10; */
+    height: 864px;
+    width: 615px;
+    padding:37px;
+    background: linear-gradient(180deg, #05435ed5 -19.12%, rgba(5, 68, 94, 0) 18.94%),
+    linear-gradient(180deg, #05435ed2 0%, #002f42c8 100%),url('/public/images/Texture\ 1.png');
+    border-radius: 0px 0px 16px 16px;
+    overflow: hidden;
+}
+
+.price-right .included-content::before{
+    position: absolute;
+    content:'';
+    top:-20px;
+    left: -50px;
+    width: 150%;
+    height: 100%;
+    background-color: #FFFFFF;
+    background-image: url('/public/images/price\ section\ background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.05;
+}
+
+.included-content .content{
+    display: flex;
+    flex-direction: row;
+    grid-gap:25px;
+    font-family: 'DM Sans',sans-serif;
+    margin-bottom:60px;
+}
+
+.included-content .content .desc{
+    width: 422px;
+    height: 40px;
+    
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+
+    letter-spacing: -0.03em;
+
+    color: #FFFFFF;  
+} 
+
+@media  screen and (max-width:1650px){
+
+    .pricing-section .price-right{
+        margin-left: 40px;
+    }
+
+    .pricing-section .header{
+        width:600px;
+        margin-bottom: 20px;
+    }
+
+    .pricing-section .left .para{
+        width: 600px;
+        text-align: justify;
+    }
+
+    .pricing-section .subsections-p{
+        /* display: block; */
+    }
+
+
+}
+
+@media  screen and (max-width:1520px){
+    .pricing-section .price-right{
+        margin-left: 5%;
+    }
+    .pricing-section .subsections-p{
+        display: block;
+    }
+}
+
+@media  screen and (max-width:1370px){
+    .pricing-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pricing-section .subsections-p{
+        display: flex;
+    }
+    
+    .pricing-section > .left{
+        padding-top: 64px;
+    }
+    .pricing-section .left .para{
+        width: 80%;
+    }
+    .pricing-section .header {
+        width: 80%;
+        /* text-align: center; */
+    }
+    .subsections-p{
+        justify-content: center;
+    }
+    .subsections-p .item .emty{
+        width: 60px;
+        height: 60px;
+        margin-right: 16px;
+    }
+    
+    .subsections-p .item .content{
+        width: 100%;
+        height: 60px;
+    }
+
+    .subsections-p .item .content h4{
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 900;
+    }
+
+    .subsections-p .item .content p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    
+    .pricing-section .header{
+        /* width: 366px;*/
+        height: 144px;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .pricing-section .left .para{
+        width: 366px;
+        height: 36px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+
+        margin-bottom: 24px;
+    }
+
+    .subsections-p .item .emty{
+        width: 30px;
+        height: 30px;
+        border: 0.46px solid transparent;
+        background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%) padding-box,
+        linear-gradient(180deg, #CFF1FF 0%, #2D5666 100%) border-box;
+    }
+
+    .subsections-p .item .content h4{
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .subsections-p .item .content p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .price-section .banner-title{
+        width: 124px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    .price-section .original-price{
+        width: 89px;
+        height: 32px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .price-section .offer-price{
+        width: 125px;
+        height: 43px;
+        font-size: 32px;
+        line-height: 43px;
+    }
+    .pricing-section .price-right{
+        margin:0px;
+        width: 366px;
+        height:515px;
+    }
+    .price-right .price-section .backlogo{
+        right: -80px;
+        bottom: -5px;
+        width: 80%;
+        height: 160%;
+    }
+
+
+    .price-right .price-section{
+        width: 366px;
+        height: 131px;
+        border-radius: 8px 8px 0px 0px;
+        padding: 16px;
+    }
+    .price-right .included-content{
+        width: 366px;
+        /* height: 131px; */
+        height: 380px;
+        border-radius: 0px 0px 8px 8px;
+    }
+
+    .included-content .content .desc{
+        width: 251.14px;
+        height: 18px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .included-content .content{
+        margin-bottom: 16px;
+    }
+
+    .pricing-section::before{
+        content: none;
+    }
+}
